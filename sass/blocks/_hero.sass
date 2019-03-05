@@ -1,0 +1,72 @@
+.hero
+  &__background
+    background-color: $secondary
+
+  &-block
+    display: flex
+    margin-top: 50px 
+
+  &-text
+    flex-basis: 50%
+    padding-right: 100px
+  
+    &__title
+      font-size: 41px
+      font-weight: 500
+      line-height: 55px
+      margin-bottom: 40px
+      font-family: 'Museo Sans Light'
+    &__subtitle
+      display: inline-block
+      font-size: 20px
+      font-weight: 500
+      margin-bottom: 70px
+  &-list
+    margin: 0
+    padding: 0   
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 25px
+      &:last-child  
+        margin-bottom: 0
+    &__image
+      width: 40px
+      height: 40px
+      border: 2px solid #ffd200;
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      margin-right: 30px
+    &__text
+      max-width: 250px 
+@media (max-width: 1200px)
+  .hero
+    &-block
+      flex-direction: column
+    &__list
+      margin-bottom: 44px
+    &__text
+      margin-right: 10px
+@media (max-width: 768px)
+  .hero
+    &-text
+      padding-right: 0
+      &__title
+        font-size: 24px
+        line-height: 1.4
+        margin-bottom: 15px
+      &__subtitle
+        font-size: 16px
+        margin-bottom: 28px
+      &-list
+        flex-direction: column
+        &__text
+          font-size: 12px
+        &__item
+          margin-bottom: 20px
+          width: 90%
+          display: flex
+
+        
