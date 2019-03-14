@@ -1,40 +1,60 @@
 .offer
   background: url('../img/offer/offer-bg.png')
   background-position: center right
-  background-size: contain
+  background-size: 989px 595px
   position: relative
+  margin-top: 0
+  height: 595px
   &:before
     content: ''
-    width: 50%
+    width: 48.5%
     height: 100%
     position: absolute
     background-color: white
     top: 0
     left: 0
   &-block
+    top: -3px
     width: 50%
     padding-right: 90px
     position: relative
+    height: 595px
   &__title
     max-width: 360px
     line-height: 35px
+    margin: 0
     margin-bottom: 20px
     text-align: left
+    font-size: 24px
+    font-weight: 400
+    line-height: 35px
+    +bold
   &__subtitle
     max-width: 250px
     margin-bottom: 30px
+    font-size: 14px
+    +reg
   &__input
-    margin-bottom: 30px
-    width: 245px
-    margin-right: 10px
-    //display: inline-block
-    &:first-child
-      margin-right: 10px
+    width: 240px
+    height: 65px
+    margin-right: 5px
+    display: block
+    font-size: 15px
+    line-height: 24px
+    outline: none
+    +reg
   &__button
     width: 100%
     min-height: 70px
     margin-bottom: 30px
+    font-size: 16px
+    font-weight: 400
+    line-height: 18px
+    +bold
   &__form-inputs
+    display: flex
+    justify-content: space-between
+    height: 95px
     
   &-backline
     display: flex
@@ -45,21 +65,76 @@
     &__text
       flex-basis: 46%
       margin-bottom: 24px
+      +reg
+      &-2
+        +bold
       &-phonenumber
         margin-top: 4px
         +bold
+.input-error
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  //max-height: 85px
+  margin-bottom: 30px
 
 @media (max-width: 1200px)
   .offer
-    block-size: 100%
+    //block-size: 100%
+    background-size: cover
+    padding: 0
+    padding-top: 40px
     &__input
       width: 100%
       margin-bottom: 10px
     &__button
-      font-size: 13px
+    font-size: 14px
+    font-weight: 400
+    line-height: 18px
 @media (max-width: 768px)
   .offer
     background: #fff
+    padding: 0
+    padding-top: 52px
+    margin-bottom: 70px
+    &__title
+      //margin: 0
+      font-size: 18px
+      line-height: 23px
+    &__subtitle
+      font-size: 14px
+    &__input
+      font-size: 15px
+    &__button
+      font-size: 14px
+      font-weight: 400
+      line-height: 18px
+      &-text
+        margin: auto
+        max-width: 60%
+        +bold
     &-block
       width: 100%
       padding-right: 0 
+    &__form-inputs
+      flex-direction: column
+      margin-bottom: 45px
+    &-backline
+      display: flex
+      flex-direction: column
+      &__text
+        font-size: 15px
+        padding: 10px 0
+        margin: 0
+@media (max-width: 567px)
+  .offer
+    &__button
+      &-text
+        font-size: 14px
+        font-weight: 400
+        line-height: 18px
+      &-backline
+        &__text
+          font-size: 15px
+          font-weight: 400
+          line-height: 24px

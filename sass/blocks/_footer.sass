@@ -20,6 +20,7 @@
   &-list
     padding: 0
     list-style: none
+    &-box
     &__icon
       width: 20px
       height: 20px
@@ -30,6 +31,12 @@
       display: flex
       align-items: flex-start
       margin-bottom: 39px
+    &__text
+      display: block
+      +reg
+    &__bold
+      +bold
+
 @media (max-width: 1200px)
   .contacts
     padding-left: 100px
@@ -39,12 +46,15 @@
     flex-direction: column-reverse
   .contacts
     flex-basis: 100%
-    padding: 66px 0
+    padding: 60px 0 10px 10px
     &__title
-      font-size: 18px;
+      margin-top: 0
+      font-size: 18px
+      line-height: 22px
       margin-bottom: 39px
+      margin-right: 30px
     &-list__text
-      font-size: 16px;
+      font-size: 16px
       line-height: 26px
   .map
     position: relative

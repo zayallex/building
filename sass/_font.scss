@@ -6,7 +6,7 @@
   url('../fonts/MuseoSansСirl/MuseoSansCyrl-300.ttfs') format('truetype');
   font-weight: normal;
   font-style: normal;
-  }
+}
 @font-face {
   font-family: 'Museo Sans Bold';
   src: url('../fonts/MuseoSansСirl/');
@@ -15,13 +15,13 @@
   url('../fonts/MuseoSansСirl/MuseoSansCyrl-700.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  }
+}
 
 @mixin reg {
-  font-family: 'Museo SansLight', sans-serif;
-  font-weight: 300;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 400;
 }
 @mixin bold {
   font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }

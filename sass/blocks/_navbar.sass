@@ -8,12 +8,17 @@
     display: flex
     align-items: center
     text-align: right
-  &__address
+  &__addres
     display: flex
     flex-direction: column
+    +reg
+    font-size: 13px
   &__button
     margin-left: 30px
     outline: none
+    +bold
+    font-size: 13px
+    //font-weight: 400
   &__phone
     display: inline-block
     font-size: 20px
@@ -32,6 +37,8 @@
 
 @media (max-width: 768px)
   .navbar
+    &-block
+      padding: 19px 0
     &__contacts
       display: none
     &__contacts
@@ -41,8 +48,15 @@
       width: 90px
 @media (max-width: 567px)
   .navbar
-      &__contacts
-      font-size: 12px
-      padding: 8px 8px
-      &__logo
-        width: 90px
+    padding-bottom: 21px
+    &__contacts
+    font-size: 12px
+    padding: 8px 8px
+    &__logo
+      width: 90px
+    &__button
+      width: 137px
+      height: 39px
+      font-size: 10px
+  .special-size
+    font-size: 10px

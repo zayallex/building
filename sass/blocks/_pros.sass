@@ -5,14 +5,32 @@
   &-list
     width: 370px
     height: 410px
+    margin-right: 10px
     background-color: #f7f7f7
     display: flex
     justify-content: space-between
     flex-direction: column
+    &-bold
+      display: inline
+      +bold
     &__text
       padding-left: 27px
       padding-top: 25px
       font-size: 16px
       line-height: 23px
       max-width: 85%
-    &__image
+      +reg
+@media (max-width: 768px)
+  .pros
+    &-lists
+      flex-direction: column
+      margin: auto
+    &-list
+      width: 100%
+      max-width: 370px
+      height: 305px
+      margin: auto
+      margin-bottom: 30px
+      &__text
+        font-size: 12px
+        line-height: 17px

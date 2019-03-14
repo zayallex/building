@@ -2,6 +2,7 @@
   box-sizing: border-box
 body
   +reg
+  margin: 0
 img
   max-width: 100%
 .container
@@ -19,7 +20,6 @@ img
   padding: 90px 0
   &-title
     font-size: 24px
-    +bold
     max-width: 500px
     text-align: center
   &-subtitle
@@ -53,6 +53,9 @@ img
       padding: 13px 23px
 
 .error
-  border: 1px solid red
+  display: block
+  top: 0
+  margin: auto
+  //border: 1px solid red
   font-weight: 500
   +bold
