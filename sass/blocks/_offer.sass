@@ -1,5 +1,5 @@
 .offer
-  background: url('../img/offer/offer-bg.png')
+  background: url('../img/offer/offer-bg.png') no-repeat
   background-position: center right
   background-size: 989px 595px
   position: relative
@@ -54,7 +54,7 @@
   &__form-inputs
     display: flex
     justify-content: space-between
-    height: 95px
+    //height: 95px
     
   &-backline
     display: flex
@@ -76,7 +76,7 @@
   flex-direction: column
   justify-content: flex-start
   //max-height: 85px
-  margin-bottom: 30px
+  //margin-bottom: 30px
 
 @media (max-width: 1200px)
   .offer
@@ -88,9 +88,9 @@
       width: 100%
       margin-bottom: 10px
     &__button
-    font-size: 14px
-    font-weight: 400
-    line-height: 18px
+      font-size: 14px
+      font-weight: 400
+      line-height: 18px
 @media (max-width: 768px)
   .offer
     background: #fff
@@ -118,7 +118,8 @@
       padding-right: 0 
     &__form-inputs
       flex-direction: column
-      margin-bottom: 45px
+      //margin-bottom: 65px
+      //height: 0%
     &-backline
       display: flex
       flex-direction: column
@@ -126,6 +127,8 @@
         font-size: 15px
         padding: 10px 0
         margin: 0
+  .input-error
+    
 @media (max-width: 567px)
   .offer
     &__button
